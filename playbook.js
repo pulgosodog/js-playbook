@@ -5,8 +5,8 @@ function filteredArray(arr, elem) {
   // Only change code below this line
   for(let i = 0; i < arr.length;i++) {
     for(let j = 0;j < arr[i].length;j++) {
-      if(arr[arr[i]][j] !== elem) {
-        newArr.push();
+      if(arr[i][j] !== elem) {
+        newArr.push(arr[i][j]);
       }
     }
 
@@ -15,4 +15,4 @@ function filteredArray(arr, elem) {
   return newArr;
 }
 
-console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 2));
+console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 'saxophones'));
